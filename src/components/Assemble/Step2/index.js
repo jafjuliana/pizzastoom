@@ -4,7 +4,7 @@ import { useAssembleContext } from "../context";
 // import { Container } from './styles';
 
 function Step2() {
-  const { activeStep, setActiveStep } = useAssembleContext();
+  const { listPizzaDough, activeStep, setActiveStep } = useAssembleContext();
 
   return (
     <div className={`step step2 ${activeStep === '2' ? 'active' : ''}`}>
@@ -16,7 +16,13 @@ function Step2() {
       </div>
 
       <div>
-        67543444567865
+        {listPizzaDough.map(item => (
+          <div className="item" key={item.label}>
+            <h5>{item.value}</h5>
+            <p>{item.description}</p>
+            <input type="radio" name="flavor" value={item.id} />
+          </div>
+        ))}
       </div>
 
       <div>

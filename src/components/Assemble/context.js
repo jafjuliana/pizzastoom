@@ -29,15 +29,15 @@ const AssembleProvider = ({ children }) => {
   };
 
   const listPizzaDough = [
-    { id: 1, label: "fina", value: "Fina", price: 0, points: 1 },
-    { id: 2, label: "tradicional", value: "Tradicional", price: 0, points: 2 },
-    { id: 3, label: "pan", value: "Pan", price: 2, points: 3 },
+    { id: 1, label: "fina", value: "Fina", price: 0, points: 1, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+    { id: 2, label: "tradicional", value: "Tradicional", price: 0, points: 2, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+    { id: 3, label: "pan", value: "Pan", price: 2, points: 3, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
   ];
 
   const listPizzaSize = [
-    { id: 1, label: "P", value: "Brotinho", price: 29.99, points: 1 },
-    { id: 2, label: "M", value: "Média", price: 39.99, points: 2 },
-    { id: 3, label: "G", value: "Grande", price: 59.99, points: 3 },
+    { id: 1, label: "P", value: "Brotinho", price: 29.99, points: 1, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+    { id: 2, label: "M", value: "Média", price: 39.99, points: 2, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
+    { id: 3, label: "G", value: "Grande", price: 59.99, points: 3, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
   ];
 
   const listPizzaFlavor = [
