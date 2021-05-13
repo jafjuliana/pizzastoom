@@ -46,6 +46,10 @@ export const Box = styled.div`
         border-bottom-left-radius: 20px;
       }
     }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   .box-points{
@@ -63,6 +67,14 @@ export const Box = styled.div`
     font-size: 20px;
     align-items: center;
 
+    @media (max-width: 768px) {
+      top: -20px;
+      right: -10px;
+      width: 70px;
+      height: 70px;
+      font-size: 12px;
+    }
+
     .content-points {
       flex: 1;
       
@@ -71,6 +83,11 @@ export const Box = styled.div`
         font-weight: 600;
         font-size: 30px;
         line-height: 25px;
+
+        @media (max-width: 768px) {
+          font-size: 20px;
+          line-height: 15px;
+        }
       }
     }
   }

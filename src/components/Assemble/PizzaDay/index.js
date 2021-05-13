@@ -22,7 +22,7 @@ function PizzaDay() {
     <Container>
       <div className="content">
         <Box>
-            <h5>Pizza do dia:</h5>
+            <h5>Selecione a pizza do dia:</h5>
             <div className="content-box">
                 <div className="image">
                     <img src={listPizzaDay.flavor.image} alt={listPizzaDay.flavor.value} />
