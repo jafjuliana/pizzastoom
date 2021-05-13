@@ -7,7 +7,7 @@ import Pizza3 from "../../assets/pizza3.jpg";
 const AssembleContext = React.createContext();
 
 const AssembleProvider = ({ children }) => {
-  const [activeStep, setActiveStep] = useState(false);
+  const [activeStep, setActiveStep] = useState('1');
   const [selectedPizza, setSelectedPizza] = useState(null);
 
   const listPizzaDay = {
