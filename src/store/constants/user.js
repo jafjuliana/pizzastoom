@@ -1,0 +1,5 @@
+export const userConstants = {
+  USER_POINTS_SET: 'USER_POINTS_SET_REQUEST',
+  USER_POINTS_GET: 'USER_POINTS_GET_REQUEST',
+};
+  
