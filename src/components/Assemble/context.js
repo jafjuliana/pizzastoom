@@ -7,8 +7,11 @@ import Pizza3 from "../../assets/pizza3.jpg";
 const AssembleContext = React.createContext();
 
 const AssembleProvider = ({ children }) => {
-  const [activeStep, setActiveStep] = useState('1');
-  const [selectedPizza, setSelectedPizza] = useState(null);
+  const [ activeStep, setActiveStep ] = useState('1');
+  const [ selectedPizza, setSelectedPizza ] = useState({});
+  const [ valueFlavor, setValueFlavor ] = useState(null);
+  const [ valueDough, setValueDough ] = useState(null);
+  const [ valueSize, setValueSize ] = useState(null);
 
   const listPizzaDay = {
     dough: { id: 3, label: "pan", value: "Pan", price: 2, points: 3 },
@@ -87,6 +90,12 @@ const AssembleProvider = ({ children }) => {
         listPizzaSize,
         setSelectedPizza,
         selectedPizza,
+        valueFlavor,
+        valueSize,
+        valueDough,
+        setValueDough,
+        setValueSize,
+        setValueFlavor,
       }}
     >
       {children}

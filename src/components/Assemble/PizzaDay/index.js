@@ -9,10 +9,10 @@ function PizzaDay() {
 
   const handleSelectedPizza = async() => {
     setSelectedPizza({
-        dough: 3,
-        size: 3,
-        flavor: 2,
-        price: '55,00'
+      dough: 3,
+      size: 3,
+      flavor: 2,
+      price: 55.00
     });
 
     await User.storePoints(listPizzaDay.points);
